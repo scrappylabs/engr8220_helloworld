@@ -23,10 +23,10 @@ make
 # set rights to execute the file
 $ sudo chmod 777 WelcomeMessage
 
-# test program
+# run program
 ./WelcomeMessage
 
-# open autostart file
+<!--# open autostart file
 sudo nano /etc/rc.local
 
 # add the path to the binary and run it (above exit 0)
@@ -34,7 +34,7 @@ sudo nano /etc/rc.local
 
 # press ctrl + o and save, then ctrl + x
 # reboot your system
-sudo reboot -h now
+sudo reboot -h now-->
 ```
 
 Version History
