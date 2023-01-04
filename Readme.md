@@ -12,10 +12,10 @@ In order to install the program so it runs at startup you need to create an entr
 $ cd ~/homework
 
 # clone this repository
-git clone 
+git clone https://github.com/scrappylabs/engr8220_helloworld.git
 
 # cd into the repo
-cd engr8220_hello
+cd engr8220_helloworld
 
 # build the application
 make
@@ -30,7 +30,7 @@ $ sudo chmod 777 WelcomeMessage
 sudo nano /etc/rc.local
 
 # add the path to the binary and run it (above exit 0)
-./home/wifi/homework/engr8220/WelcomeMessage </dev/null >/dev/null 2>&1 &
+./home/wifi/homework/engr8220_helloworld/WelcomeMessage </dev/null >/dev/null 2>&1 &
 
 # press ctrl + o and save, then ctrl + x
 # reboot your system
