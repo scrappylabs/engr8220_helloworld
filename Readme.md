@@ -7,7 +7,7 @@ How to Compile and Install
 ============
 
 In order to install the program so it runs at startup you need to create an entry to rc.local.
-
+```
 # change to the homework1 directory
 $ cd ~/homework
 
@@ -35,6 +35,7 @@ sudo nano /etc/rc.local
 # press ctrl + o and save, then ctrl + x
 # reboot your system
 sudo reboot -h now
+```
 
 Version History
 ===============
