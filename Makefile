@@ -1,9 +1,9 @@
 CC=gcc
 CFLAGS=-c -pedantic -Wall
 LDFLAGS=-pedantic -Wall
-SOURCES=main.cpp lib.cpp
+SOURCES=main.cpp
 OBJECTS=$(SOURCES:.cpp=.o)
-EXECUTABLE=Program
+EXECUTABLE=WelcomeMessage
 
 all: $(SOURCES) $(EXECUTABLE)
 	
