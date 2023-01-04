@@ -25,6 +25,7 @@ $ sudo chmod 777 WelcomeMessage
 
 # run program
 ./WelcomeMessage
+```
 
 <!--# open autostart file
 sudo nano /etc/rc.local
@@ -35,7 +36,6 @@ sudo nano /etc/rc.local
 # press ctrl + o and save, then ctrl + x
 # reboot your system
 sudo reboot -h now-->
-```
 
 Version History
 ===============
