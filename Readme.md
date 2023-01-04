@@ -10,19 +10,19 @@ In order to install the program so it runs at startup you need to create an entr
 
 ```bash
 #copy program
-$ sudo cp ./Program /home/pi/Desktop/Programs/Program
+$ sudo cp ./Program /home/wifi/Desktop/Programs/Program
 
 # set rights to execute the file
-$ sudo chmod 0777 /home/pi/Desktop/Programs/Program
+$ sudo chmod 0777 /home/wifi/Desktop/Programs/Program
 
 # test program first
 # abort with crtl + c
-/home/pi/Desktop/Programs/Program
+/home/wifi/Desktop/Programs/Program
 
 # open autostart file
 $ sudo nano /etc/rc.local
 # add the script (above exit 0)
-/home/pi/Desktop/Programs/Program </dev/null >/dev/null 2>&1 &
+/home/wifi/Desktop/Programs/Program </dev/null >/dev/null 2>&1 &
 
 # press ctrl + x and save with y
 # reboot your system
