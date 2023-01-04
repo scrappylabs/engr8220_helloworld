@@ -1,58 +1,40 @@
 Hello World example
 ===================
-This is a general Hello World example to get a standard program on a linux machine like Raspberry Pi.
-It provides a simple makefile, a standard lib and setup() and loop() functions.
+This is a general Hello World example to get a standard program on a linux machine.
+It provides a simple makefile.
 
-Installation
+How to Compile and Install
 ============
 
 In order to install the program so it runs at startup you need to create an entry to rc.local.
 
-```bash
-#copy program
-$ sudo cp ./Program /home/wifi/Desktop/Programs/Program
+# change to the homework1 directory
+$ cd ~/homework
+
+# clone this repository
+git clone 
+
+# cd into the repo
+cd engr8220_hello
+
+# build the application
+make
 
 # set rights to execute the file
-$ sudo chmod 0777 /home/wifi/Desktop/Programs/Program
+$ sudo chmod 777 WelcomeMessage
 
-# test program first
-# abort with crtl + c
-/home/wifi/Desktop/Programs/Program
+# test program
+./WelcomeMessage
 
 # open autostart file
-$ sudo nano /etc/rc.local
-# add the script (above exit 0)
-/home/wifi/Desktop/Programs/Program </dev/null >/dev/null 2>&1 &
+sudo nano /etc/rc.local
 
-# press ctrl + x and save with y
+# add the path to the binary and run it (above exit 0)
+./home/wifi/homework/engr8220/WelcomeMessage </dev/null >/dev/null 2>&1 &
+
+# press ctrl + o and save, then ctrl + x
 # reboot your system
-
-# kill the Program
-sudo killall Program
-```
-
-How to compile
-==============
-
-Makefile instructions
-
-```bash
-# compile the program
-$ sudo make
-# start the program (2options)
-$ sudo make start
-$ sudo ./Program
-# compile and start
-$ sudo make cstart
-# clean the .o sources
-$ sudo make clean
-# clean all files
-$ sudo make cleanall
-# rebuild (clean + compile)
-$ sudo make rebuild
-# manually compile with (remove the lib.h include then)
-$ sudo gcc -o main.o main.cpp -pedantic -Wall
-```
+sudo reboot -h now
 
 Version History
 ===============
