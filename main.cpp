@@ -29,27 +29,11 @@ THE SOFTWARE.
 #include <stdint.h> // uint_t definitions
 #include <stdbool.h> // bool type
 
-// include library
-#include "lib.h"
-
 // function prototypes
 void setup(void);
 void loop(void);
 
 int main(){ 
-	setup();
-	while(1)
-		loop();
-	return 0;
-}
-
-void setup(void){
-	// put your setup code here, to run once:
 	printf("%s \n", "Hello World");
-}
-
-void loop(void){
-	// put your main code here, to run repeatedly:
-	// remove exit 0
-	exit (0);
+	return 0;
 }
