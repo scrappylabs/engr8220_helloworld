@@ -34,6 +34,6 @@ void setup(void);
 void loop(void);
 
 int main(){ 
-	printf("%s \n", "Hello World");
+	printf("%s \n", "Hello ENGR8220/EE6900 Student!");
 	return 0;
 }
